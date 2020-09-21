@@ -1,0 +1,873 @@
+{
+  "ReportGuid": "88810ff51dc9949b2b23f4fa74f9f5a1",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportCreated": "/Date(1595919149000-0300)/",
+  "ReportChanged": "/Date(1595919149000-0300)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Centimeters",
+  "PreviewSettings": 268435455,
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiODataSource",
+        "Name": "Santa_Ceia",
+        "Alias": "Santa Ceia",
+        "Columns": {
+          "0": {
+            "Name": "l_id",
+            "Index": -1,
+            "NameInSource": "l_id",
+            "Alias": "l_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "l_dataehora",
+            "Index": -1,
+            "NameInSource": "l_dataehora",
+            "Alias": "l_dataehora",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "SantaCeia"
+      },
+      "1": {
+        "Ident": "StiODataSource",
+        "Name": "Batismo",
+        "Alias": "Batismo",
+        "Columns": {
+          "0": {
+            "Name": "l_id",
+            "Index": -1,
+            "NameInSource": "l_id",
+            "Alias": "l_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "3": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "l_dataehora",
+            "Index": -1,
+            "NameInSource": "l_dataehora",
+            "Alias": "l_dataehora",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "Batismo"
+      },
+      "2": {
+        "Ident": "StiODataSource",
+        "Name": "ENSAIO_MUSICAL_REGIONAL",
+        "Alias": "ENSAIO MUSICAL REGIONAL",
+        "Columns": {
+          "0": {
+            "Name": "l_id",
+            "Index": -1,
+            "NameInSource": "l_id",
+            "Alias": "l_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "atende2_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende2_membro_nomecurto",
+            "Alias": "atende2_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "l_dataehora",
+            "Index": -1,
+            "NameInSource": "l_dataehora",
+            "Alias": "l_dataehora",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "ENSAIOMUSICALREGIONAL"
+      },
+      "3": {
+        "Ident": "StiODataSource",
+        "Name": "REUNIÃO_PARA_MOCIDADE",
+        "Alias": "REUNIÃO PARA MOCIDADE",
+        "Columns": {
+          "0": {
+            "Name": "l_id",
+            "Index": -1,
+            "NameInSource": "l_id",
+            "Alias": "l_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "l_dataehora",
+            "Index": -1,
+            "NameInSource": "l_dataehora",
+            "Alias": "l_dataehora",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "REUNIAOPARAMOCIDADE"
+      },
+      "4": {
+        "Ident": "StiODataSource",
+        "Name": "REGIONALNOVO",
+        "Alias": "REGIONALNOVO",
+        "Columns": {
+          "0": {
+            "Name": "r_id",
+            "Index": -1,
+            "NameInSource": "r_id",
+            "Alias": "r_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "regional_nome",
+            "Index": -1,
+            "NameInSource": "regional_nome",
+            "Alias": "regional_nome",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "r_regional_nome",
+            "Index": -1,
+            "NameInSource": "r_regional_nome",
+            "Alias": "r_regional_nome",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "REGIONALNOVO"
+      },
+      "5": {
+        "Ident": "StiODataSource",
+        "Name": "rodapeTexto",
+        "Alias": "rodapeTexto",
+        "Columns": {
+          "0": {
+            "Name": "texto",
+            "Index": -1,
+            "NameInSource": "texto",
+            "Alias": "texto",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "rodapeTexto"
+      },
+      "6": {
+        "Ident": "StiODataSource",
+        "Name": "NOMEDALISTAREPORT",
+        "Alias": "NOMEDALISTAREPORT",
+        "Columns": {
+          "0": {
+            "Name": "regional_regional_nome",
+            "Index": -1,
+            "NameInSource": "regional_regional_nome",
+            "Alias": "regional_regional_nome",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "avisos",
+            "Index": -1,
+            "NameInSource": "avisos",
+            "Alias": "avisos",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "NOMEDALISTAREPORT"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiODataDatabase",
+        "Name": "app",
+        "Alias": "app",
+        "ConnectionStringEncrypted": "0VLNq2hRe/TCSfn0Zwhha9Fe0UDISqHN"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "e0ad71f48b01e948deef3fc604c3ded7",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand1",
+          "ClientRectangle": "0,0.4,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "Guid": "5af65afd7ea44cfcb1ac29b2a208eded",
+              "ClientRectangle": "0.1,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "CONGREGAÇÃO CRISTÃ NO BRASIL "
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,1.8,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "Guid": "5b84089bfd13b6e6e28ac24efb441fa2",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "LISTA DE BATISMOS E DIVERSOS"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "LISTA DE BATISMOS E DIVERSOS"
+          }
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand6",
+          "ClientRectangle": "0,3.2,9.5,0.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "Guid": "82dde54fba274e0ddde1502024db558a",
+              "ClientRectangle": "4.2,0,2.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Time}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "Guid": "d68c863addc76588aa59f2cbd38635d5",
+              "ClientRectangle": "1.2,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{NOMEDALISTAREPORT.regional_regional_nome}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "NOMEDALISTAREPORT"
+        },
+        "3": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand2",
+          "ClientRectangle": "0,4.4,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "Guid": "333440f9887442ac0410a4b8190b2b1a",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "BATISMO"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "BATISMO"
+          }
+        },
+        "4": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,5.8,9.5,0.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text16",
+              "Guid": "61cf4169c2a6be976ff5609d512f31fc",
+              "ClientRectangle": "0,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Batismo.dataehora}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "Guid": "0c656c19e02b9b9f09ce034317518233",
+              "ClientRectangle": "2.8,0,3.2,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Batismo.localevento_comum_nome}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "209e3f4c324db88a95459d52408fc27f",
+              "ClientRectangle": "6,0,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Batismo.atende1_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            }
+          },
+          "DataSourceName": "Batismo"
+        },
+        "5": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand3",
+          "Guid": "15c6e0c902c3bcde56856f53f87ed2e4",
+          "ClientRectangle": "0,7,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "106ff5d755c994a7459488f565a81ca8",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "SANTA CEIA"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "SANTA CEIA"
+          }
+        },
+        "6": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand3",
+          "ClientRectangle": "0,8.4,9.5,0.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "Guid": "9239fe1138359f7dba948007e6ccf869",
+              "ClientRectangle": "0,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Santa_Ceia.dataehora}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "Guid": "40ebafbe582d620924fb003f28c90e00",
+              "ClientRectangle": "2.8,0,3.2,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Santa_Ceia.localevento_comum_nome}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "Guid": "d35f1aaf16865c56305a709b7e40cb82",
+              "ClientRectangle": "6,0,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Santa_Ceia.atende1_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          },
+          "DataSourceName": "Santa_Ceia"
+        },
+        "7": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand4",
+          "Guid": "29bd98f942ecf01ce28df45ec29065bf",
+          "ClientRectangle": "0,9.6,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "Guid": "9bd7d42c1335b80cd767b6b7138e064c",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ENSAIO MUSICAL REGIONAL"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "ENSAIO MUSICAL REGIONAL"
+          }
+        },
+        "8": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand4",
+          "ClientRectangle": "0,11,9.5,0.8",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text15",
+              "Guid": "b0a929782e634c7f4ccce8fbcc65aeca",
+              "ClientRectangle": "0,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIO_MUSICAL_REGIONAL.dataehora}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text19",
+              "Guid": "a31c731ecf4c0694aa59aa1f013aa70c",
+              "ClientRectangle": "2.8,0,3.2,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIO_MUSICAL_REGIONAL.localevento_comum_nome}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "c3860e2ec21e0a861be49cb09aff6e91",
+              "ClientRectangle": "6,0,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIO_MUSICAL_REGIONAL.atende1_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text21",
+              "Guid": "dd86b07438dfc4eb746664d68577a79d",
+              "ClientRectangle": "6,0.4,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIO_MUSICAL_REGIONAL.atende2_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          },
+          "DataSourceName": "ENSAIO_MUSICAL_REGIONAL"
+        },
+        "9": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand5",
+          "Guid": "b225afc84ab380ab21768268a7bc765c",
+          "ClientRectangle": "0,12.6,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text26",
+              "Guid": "6fd14589700d4925850e03e10c72e7c8",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "REUNIÃO PARA MOCIDADE"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "REUNIÃO PARA MOCIDADE"
+          }
+        },
+        "10": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand5",
+          "ClientRectangle": "0,14,9.5,0.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "e10f2f154338d8119123be7e48a05b94",
+              "ClientRectangle": "0,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{REUNIÃO_PARA_MOCIDADE.dataehora}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text24",
+              "Guid": "bcc304595ead3ee1ecbdc2ba09d6186e",
+              "ClientRectangle": "2.8,0,3.2,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{REUNIÃO_PARA_MOCIDADE.localevento_comum_nome}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text25",
+              "Guid": "16653479bf55bb2480b4fc9364e7f060",
+              "ClientRectangle": "6,0,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{REUNIÃO_PARA_MOCIDADE.atende1_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          },
+          "DataSourceName": "REUNIÃO_PARA_MOCIDADE"
+        },
+        "11": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand1",
+          "ClientRectangle": "0,15.2,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "Guid": "bcce7393820d7c8b94957bfa03c70471",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "AVISOS"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          }
+        },
+        "12": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand2",
+          "ClientRectangle": "0,16.6,9.5,1.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "Guid": "f2bd9eebb35666406505dbf344f496e1",
+              "ClientRectangle": "0.2,0,9.2,1.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{NOMEDALISTAREPORT.avisos}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            }
+          },
+          "DataSourceName": "NOMEDALISTAREPORT"
+        }
+      },
+      "Columns": 2,
+      "PageWidth": 21,
+      "PageHeight": 29.7,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 1,
+        "Right": 1,
+        "Top": 1,
+        "Bottom": 1
+      }
+    }
+  }
+}

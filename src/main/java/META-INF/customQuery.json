@@ -1,0 +1,2211 @@
+{
+  "auth": {
+    "customId": "auth",
+    "queryName": "Autenticar",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "blockly": null,
+    "entitySimpleName": "User",
+    "entityFullName": "app.entity.User",
+    "query": "select o from User o where o.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "GETAuthorities": null,
+      "POST": false,
+      "POSTAuthorities": null,
+      "PUT": false,
+      "PUTAuthorities": null,
+      "DELETE": false,
+      "DELETEAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "email": null,
+      "name": null,
+      "login": null,
+      "picture": null,
+      "password": null,
+      "theme": null
+    },
+    "security": {
+      "id": null,
+      "email": null,
+      "name": null,
+      "login": null,
+      "picture": null,
+      "password": null,
+      "theme": null
+    },
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/query/auth/"
+  },
+  "roles": {
+    "customId": "roles",
+    "queryName": "Obter Autorização",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "blockly": null,
+    "entitySimpleName": "Role",
+    "entityFullName": "app.entity.Role",
+    "query": "select o.id from Role o where o.user.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "GETAuthorities": null,
+      "POST": false,
+      "POSTAuthorities": null,
+      "PUT": false,
+      "PUTAuthorities": null,
+      "DELETE": false,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "user": null
+    },
+    "security": {
+      "id": null,
+      "user": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/query/roles/"
+  },
+  "device": {
+    "customId": "device",
+    "queryName": "Atualizar Dispositivos",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "blockly": null,
+    "entitySimpleName": "Device",
+    "entityFullName": "app.entity.Device",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Device",
+          "namespace": "app.entity.Device",
+          "alias": "d"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "d",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "d.id",
+            "field": "d.id",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": ":id",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": true,
+      "paginatorAutomatic": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "id",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "token": null
+    },
+    "security": {
+      "id": null,
+      "token": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/query/1jy88nt41afza/"
+  },
+  "query92275": {
+    "customId": "query92275",
+    "queryName": "listaservicosnova",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.eventos.evento_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende2.membro_nomecurto",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.regional.regional_nome",
+            "field": "l.regional.regional_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": ":regionalRegional_nome",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "regionalRegional_nome",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query92275/"
+  },
+  "query824357": {
+    "customId": "Batismo",
+    "queryName": "Batismo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.eventos.evento_nome",
+            "field": "l.eventos.evento_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": "BATISMO",
+            "valueIsField": false
+          },
+          {
+            "id": "l.nomeDaLista.id",
+            "field": "l.nomeDaLista.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":nomeDaListaId",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "nomeDaListaId",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query824357/"
+  },
+  "query437741": {
+    "customId": "SantaCeia",
+    "queryName": "SantaCeia",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.eventos.evento_nome",
+            "field": "l.eventos.evento_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": "SANTA CEIA",
+            "valueIsField": false
+          },
+          {
+            "id": "l.nomeDaLista.id",
+            "field": "l.nomeDaLista.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":nomeDaListaId",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "nomeDaListaId",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query437741/"
+  },
+  "query575072": {
+    "customId": "ENSAIOMUSICALREGIONAL",
+    "queryName": "ENSAIOMUSICALREGIONAL",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende2.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.eventos.evento_nome",
+            "field": "l.eventos.evento_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": "ENSAIO MUSICAL REGIONAL",
+            "valueIsField": false
+          },
+          {
+            "id": "l.nomeDaLista.id",
+            "field": "l.nomeDaLista.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":nomeDaListaId",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "nomeDaListaId",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query575072/"
+  },
+  "query590045": {
+    "customId": "REUNIAOPARAMOCIDADE",
+    "queryName": "REUNIAOPARAMOCIDADE",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.eventos.evento_nome",
+            "field": "l.eventos.evento_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": "REUNIÃO PARA MOCIDADE",
+            "valueIsField": false
+          },
+          {
+            "id": "l.nomeDaLista.id",
+            "field": "l.nomeDaLista.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":nomeDaListaId",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "nomeDaListaId",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query590045/"
+  },
+  "query624850": {
+    "customId": "REGIONALNOVO",
+    "queryName": "REGIONALNOVO",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "regional",
+    "entityFullName": "app.entity.regional",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "regional",
+          "namespace": "app.entity.regional",
+          "alias": "r"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "r",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "r.regional_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "regional_nome": null,
+      "regional_sede": null,
+      "regional_cep": null,
+      "regional_fonefixo": null,
+      "regional_fonecel": null,
+      "regional_logradouro": null,
+      "regional_bairro": null,
+      "regional_email": null,
+      "regional_obs": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "regional_nome": null,
+      "regional_sede": null,
+      "regional_cep": null,
+      "regional_fonefixo": null,
+      "regional_fonecel": null,
+      "regional_logradouro": null,
+      "regional_bairro": null,
+      "regional_email": null,
+      "regional_obs": null
+    },
+    "security": {
+      "id": null,
+      "regional_nome": null,
+      "regional_sede": null,
+      "regional_cep": null,
+      "regional_fonefixo": null,
+      "regional_fonecel": null,
+      "regional_logradouro": null,
+      "regional_bairro": null,
+      "regional_email": null,
+      "regional_obs": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query624850/"
+  },
+  "query711628": {
+    "customId": "LISTADESERVICOS",
+    "queryName": "LISTADESERVICOS",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l.regional.regional_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.eventos.evento_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.regional",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende2.membro_nomecurto",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "avisos": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "avisos": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "avisos": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query711628/"
+  },
+  "query106956": {
+    "customId": "Lista2",
+    "queryName": "Lista2",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l",
+          "name": "Listaservicos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecompleto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.regional.regional_nome",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query106956/"
+  },
+  "query865573": {
+    "customId": "comumG",
+    "queryName": "comumGridCombo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "comum",
+    "entityFullName": "app.entity.comum",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "comum",
+          "alias": "c",
+          "namespace": "app.entity.comum"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "c"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "security": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query865573/"
+  },
+  "query911724": {
+    "customId": "comumGridForCombo",
+    "queryName": "comumGridForCombo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "comum",
+    "entityFullName": "app.entity.comum",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "comum",
+          "alias": "c",
+          "namespace": "app.entity.comum"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "c"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "security": {
+      "id": null,
+      "comum_nome": null,
+      "comum_codrelatorio": null,
+      "comum_cep": null,
+      "comum_cnpj": null,
+      "comum_fonefixo": null,
+      "comum_logradouro": null,
+      "comum_bairro": null,
+      "comum_cidade": null,
+      "regional": null,
+      "microregional": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query911724/"
+  },
+  "query962201": {
+    "customId": "membrosGridCombo",
+    "queryName": "membrosGridCombo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "membros",
+    "entityFullName": "app.entity.membros",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "membros",
+          "alias": "m",
+          "namespace": "app.entity.membros"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "m"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "security": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query962201/"
+  },
+  "query453695": {
+    "customId": "membrosGridForCombo",
+    "queryName": "membrosGridForCombo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "membros",
+    "entityFullName": "app.entity.membros",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "membros",
+          "alias": "m",
+          "namespace": "app.entity.membros"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "m"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "security": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query453695/"
+  },
+  "query890015": {
+    "customId": "membros2GridForCombo",
+    "queryName": "membros2GridForCombo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "membros",
+    "entityFullName": "app.entity.membros",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "membros",
+          "alias": "m",
+          "namespace": "app.entity.membros"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "m"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "security": {
+      "id": null,
+      "membro_nomecompleto": null,
+      "membro_cpf": null,
+      "membro_nomecurto": null,
+      "membro_dataapresentacao": null,
+      "membro_cartaoccb": null,
+      "membro_evidencianovaslinguas": null,
+      "membro_status": null,
+      "membro_datanasc": null,
+      "membro_databatismo": null,
+      "membro_estadocivil": null,
+      "membro_sexo": null,
+      "membro_numerorg": null,
+      "membro_orgemissoruf": null,
+      "membro_dataexpedicao": null,
+      "membro_especial": null,
+      "membro_numeropispasep": null,
+      "membro_profissao": null,
+      "membro_fonefixo": null,
+      "membro_fonecelular": null,
+      "membro_cidadeuf": null,
+      "membro_cep": null,
+      "membro_bairro": null,
+      "membro_logradouro": null,
+      "membro_pontoreferencia": null,
+      "membro_email": null,
+      "membro_mae": null,
+      "membro_pai": null,
+      "membro_obs": null,
+      "membro_foto": null,
+      "regional": null,
+      "microregional": null,
+      "comum": null,
+      "funcao": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query890015/"
+  },
+  "query942798": {
+    "customId": "NOMEDALISTAREPORT",
+    "queryName": "NOMEDALISTAREPORT",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "NomeDaLista",
+    "entityFullName": "app.entity.NomeDaLista",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "NomeDaLista",
+          "namespace": "app.entity.NomeDaLista",
+          "alias": "n"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "n.regional.regional_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "n.avisos",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "n.id",
+            "field": "n.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":id",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "id",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "nome": null,
+      "avisos": null,
+      "regional": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "nome": null,
+      "avisos": null,
+      "regional": null
+    },
+    "security": {
+      "id": null,
+      "nome": null,
+      "avisos": null,
+      "regional": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query942798/"
+  }
+}

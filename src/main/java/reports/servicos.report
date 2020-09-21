@@ -1,0 +1,332 @@
+{
+  "ReportGuid": "a16366592de162f7a17a6af789eab1e2",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportCreated": "/Date(1593410193000-0300)/",
+  "ReportChanged": "/Date(1593410193000-0300)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Centimeters",
+  "PreviewSettings": 268435455,
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiODataSource",
+        "Name": "app_Listaservicos",
+        "Alias": "app.Listaservicos",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "localevento",
+            "Index": -1,
+            "NameInSource": "localevento",
+            "Alias": "localevento",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "atende1",
+            "Index": -1,
+            "NameInSource": "atende1",
+            "Alias": "atende1",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "atende2",
+            "Index": -1,
+            "NameInSource": "atende2",
+            "Alias": "atende2",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "resultadoirmas",
+            "Index": -1,
+            "NameInSource": "resultadoirmas",
+            "Alias": "resultadoirmas",
+            "Type": "System.Double"
+          },
+          "6": {
+            "Name": "resultadoirmaos",
+            "Index": -1,
+            "NameInSource": "resultadoirmaos",
+            "Alias": "resultadoirmaos",
+            "Type": "System.Double"
+          },
+          "7": {
+            "Name": "resultadototal",
+            "Index": -1,
+            "NameInSource": "resultadototal",
+            "Alias": "resultadototal",
+            "Type": "System.Double"
+          },
+          "8": {
+            "Name": "eventos",
+            "Index": -1,
+            "NameInSource": "eventos",
+            "Alias": "eventos",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "regional",
+            "Index": -1,
+            "NameInSource": "regional",
+            "Alias": "regional",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "atende1_membro_nomecompleto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecompleto",
+            "Alias": "atende1_membro_nomecompleto",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "atende2_membro_nomecompleto",
+            "Index": -1,
+            "NameInSource": "atende2_membro_nomecompleto",
+            "Alias": "atende2_membro_nomecompleto",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "eventos_evento_nome",
+            "Index": -1,
+            "NameInSource": "eventos_evento_nome",
+            "Alias": "eventos_evento_nome",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "regional_regional_nome",
+            "Index": -1,
+            "NameInSource": "regional_regional_nome",
+            "Alias": "regional_regional_nome",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "Listaservicos"
+      },
+      "1": {
+        "Ident": "StiODataSource",
+        "Name": "listaservicosnova",
+        "Alias": "listaservicosnova",
+        "Columns": {
+          "0": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "1": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "eventos_evento_nome",
+            "Index": -1,
+            "NameInSource": "eventos_evento_nome",
+            "Alias": "eventos_evento_nome",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "atende2_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende2_membro_nomecurto",
+            "Alias": "atende2_membro_nomecurto",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "query92275"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiODataDatabase",
+        "Name": "app",
+        "Alias": "app",
+        "ConnectionStringEncrypted": "0VLNq2hRe/TCSfn0Zwhha9Fe0UDISqHN"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "d97678a8b9222b779416ac17b5a01a21",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeaderBand1",
+          "ClientRectangle": "0,0.4,19,1.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "Guid": "0a2bdd263f6245607935a9ca21781eb6",
+              "ClientRectangle": "0,0.2,9,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Congregação Cristã no Brasil"
+              },
+              "HorAlignment": "Center",
+              "Font": ";14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "ec1864c609721cc30d0a721b2963cb12",
+              "ClientRectangle": "0,0.8,9,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "LISTA DE BATISMOS E DIVERSOS"
+              },
+              "HorAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,3,9.1,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": "All;;;;;;;solid:0,0,0",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "Guid": "4ee970a10c0e5e43462b317c78274e11",
+              "ClientRectangle": "1.2,0,6.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{app_Listaservicos.eventos_evento_nome}"
+              },
+              "HorAlignment": "Center",
+              "Font": ";11;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,4.4,9.1,0.8",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "Guid": "e2d3ce73d2bd08097e4fdc3b53efa932",
+              "ClientRectangle": "0,0,3,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{listaservicosnova.dataehora}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "TextFormat": {
+                "Ident": "StiDateFormatService",
+                "StringFormat": "M.dd"
+              }
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "Guid": "0c0db06610e74d24e287f966907e5613",
+              "ClientRectangle": "3,0,3,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{listaservicosnova.localevento_comum_nome}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            }
+          },
+          "DataSourceName": "listaservicosnova"
+        }
+      },
+      "ColumnGaps": 0.4,
+      "Columns": 2,
+      "PageWidth": 21,
+      "PageHeight": 29.7,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 1,
+        "Right": 1,
+        "Top": 1,
+        "Bottom": 1
+      }
+    }
+  }
+}

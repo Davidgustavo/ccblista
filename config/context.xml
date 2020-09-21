@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><Context>
+    <Resource accessToUnderlyingConnectionAllowed="true" driverClassName="org.h2.Driver" logAbandoned="true" name="jdbc/main" password="root" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:h2:file:~/f4d057e5b78d448195788e6a3cb572e8;DATABASE_TO_UPPER=false;ALIAS_COLUMN_NAME=true;AUTO_SERVER=TRUE" username="root"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" name="jdbc/ccblista" password="Y@ma3tvf66DbDGP" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:mysql://ccblista.mysql.uhserver.com:3306/ccblista?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false" username="jarkes"/>
+    <Profile value="DEV"/>
+    <Profile value="PROD"/>
+</Context>

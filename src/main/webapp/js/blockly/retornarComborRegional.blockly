@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="retornarComborRegional" ruleName="retornarComborRegional" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="487.4000000000003" scrolly="-56.30000000000007" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="retorno"/>
+    </mutation>
+    <field name="NAME">Executar</field>
+    <comment h="80" pinned="false" w="160">retornarComborRegional</comment>
+    <value name="RETURN">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5O17xt0j+cZ`-%E,cZ;n" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">retorno</field>
+      </block>
+    </value>
+  </block>
+</blockly>

@@ -1,0 +1,13 @@
+window.dataSourceMap = window.dataSourceMap || [];
+window.dataSourceMap["app.device"] = { customId: "device", serviceUrl: "api/cronapi/query/1jy88nt41afza/", serviceUrlODATA: "/api/cronapi/odata/v2/app/device" };
+window.dataSourceMap["app.membros"] = { customId: "app.entity.membros", serviceUrl: "api/cronapi/crud/app.entity.membros", serviceUrlODATA: "/api/cronapi/odata/v2/app/membros" };
+window.dataSourceMap["app.User"] = { customId: "app.entity.User", serviceUrl: "api/cronapi/crud/app.entity.User", serviceUrlODATA: "/api/cronapi/odata/v2/app/User" };
+window.dataSourceMap["app.auth"] = { customId: "auth", serviceUrl: "api/cronapi/query/auth/", serviceUrlODATA: "/api/cronapi/odata/v2/app/auth" };
+window.dataSourceMap["app.roles"] = { customId: "roles", serviceUrl: "api/cronapi/query/roles/", serviceUrlODATA: "/api/cronapi/odata/v2/app/roles" };
+window.dataSourceMap["app.Device"] = { customId: "app.entity.Device", serviceUrl: "api/cronapi/crud/app.entity.Device", serviceUrlODATA: "/api/cronapi/odata/v2/app/Device" };
+window.dataSourceMap["app.eventos"] = { customId: "app.entity.eventos", serviceUrl: "api/cronapi/crud/app.entity.eventos", serviceUrlODATA: "/api/cronapi/odata/v2/app/eventos" };
+window.dataSourceMap["app.funcao"] = { customId: "app.entity.funcao", serviceUrl: "api/cronapi/crud/app.entity.funcao", serviceUrlODATA: "/api/cronapi/odata/v2/app/funcao" };
+window.dataSourceMap["app.regional"] = { customId: "app.entity.regional", serviceUrl: "api/cronapi/crud/app.entity.regional", serviceUrlODATA: "/api/cronapi/odata/v2/app/regional" };
+window.dataSourceMap["app.Role"] = { customId: "app.entity.Role", serviceUrl: "api/cronapi/crud/app.entity.Role", serviceUrlODATA: "/api/cronapi/odata/v2/app/Role" };
+window.dataSourceMap["app.comum"] = { customId: "app.entity.comum", serviceUrl: "api/cronapi/crud/app.entity.comum", serviceUrlODATA: "/api/cronapi/odata/v2/app/comum" };
+window.dataSourceMap["app.microregional"] = { customId: "app.entity.microregional", serviceUrl: "api/cronapi/crud/app.entity.microregional", serviceUrlODATA: "/api/cronapi/odata/v2/app/microregional" };

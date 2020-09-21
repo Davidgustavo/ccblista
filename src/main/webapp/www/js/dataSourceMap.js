@@ -1,0 +1,1 @@
+window.dataSourceMap = window.dataSourceMap || [];

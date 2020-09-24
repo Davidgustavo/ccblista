@@ -2207,5 +2207,84 @@
       "foreignKey": null
     },
     "serviceUrl": "api/cronapi/odata/v2/app/query942798/"
+  },
+  "query422745": {
+    "customId": "eventosGridFor2Combo",
+    "queryName": "eventosGridFor2Combo",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "eventos",
+    "entityFullName": "app.entity.eventos",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "eventos",
+          "alias": "e",
+          "namespace": "app.entity.eventos"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "e"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "evento_nome": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "evento_nome": null
+    },
+    "security": {
+      "id": null,
+      "evento_nome": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query422745/"
   }
 }

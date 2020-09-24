@@ -44,7 +44,7 @@ public class NomeDaLista implements Serializable {
   /**
   * @generated
   */
-  @Column(name = "avisos", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "avisos", nullable = true, unique = false, length=10000, insertable=true, updatable=true)
   
   private java.lang.String avisos;
 

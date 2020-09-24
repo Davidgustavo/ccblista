@@ -1,9 +1,9 @@
 {
-  "ReportGuid": "88810ff51dc9949b2b23f4fa74f9f5a1",
+  "ReportGuid": "902a7b007976f0c1a9d7768822247a36",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1595919149000-0300)/",
-  "ReportChanged": "/Date(1595919149000-0300)/",
+  "ReportCreated": "/Date(1595897549000-0300)/",
+  "ReportChanged": "/Date(1595897549000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -225,22 +225,6 @@
       },
       "5": {
         "Ident": "StiODataSource",
-        "Name": "rodapeTexto",
-        "Alias": "rodapeTexto",
-        "Columns": {
-          "0": {
-            "Name": "texto",
-            "Index": -1,
-            "NameInSource": "texto",
-            "Alias": "texto",
-            "Type": "System.String"
-          }
-        },
-        "NameInSource": "app",
-        "SqlCommand": "rodapeTexto"
-      },
-      "6": {
-        "Ident": "StiODataSource",
         "Name": "NOMEDALISTAREPORT",
         "Alias": "NOMEDALISTAREPORT",
         "Columns": {
@@ -284,6 +268,16 @@
       "Brush": "solid:",
       "Components": {
         "0": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,32.44,19,0.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "1": {
           "Ident": "StiHeaderBand",
           "Name": "HeaderBand1",
           "ClientRectangle": "0,0.4,9.5,0.6",
@@ -314,7 +308,7 @@
             }
           }
         },
-        "1": {
+        "2": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand1",
           "ClientRectangle": "0,1.8,9.5,0.6",
@@ -348,7 +342,7 @@
             "Value": "LISTA DE BATISMOS E DIVERSOS"
           }
         },
-        "2": {
+        "3": {
           "Ident": "StiDataBand",
           "Name": "DataBand6",
           "ClientRectangle": "0,3.2,9.5,0.4",
@@ -392,7 +386,7 @@
           },
           "DataSourceName": "NOMEDALISTAREPORT"
         },
-        "3": {
+        "4": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand2",
           "ClientRectangle": "0,4.4,9.5,0.6",
@@ -426,7 +420,7 @@
             "Value": "BATISMO"
           }
         },
-        "4": {
+        "5": {
           "Ident": "StiDataBand",
           "Name": "DataBand1",
           "ClientRectangle": "0,5.8,9.5,0.4",
@@ -488,7 +482,7 @@
           },
           "DataSourceName": "Batismo"
         },
-        "5": {
+        "6": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand3",
           "Guid": "15c6e0c902c3bcde56856f53f87ed2e4",
@@ -523,7 +517,7 @@
             "Value": "SANTA CEIA"
           }
         },
-        "6": {
+        "7": {
           "Ident": "StiDataBand",
           "Name": "DataBand3",
           "ClientRectangle": "0,8.4,9.5,0.4",
@@ -585,7 +579,7 @@
           },
           "DataSourceName": "Santa_Ceia"
         },
-        "7": {
+        "8": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand4",
           "Guid": "29bd98f942ecf01ce28df45ec29065bf",
@@ -620,7 +614,7 @@
             "Value": "ENSAIO MUSICAL REGIONAL"
           }
         },
-        "8": {
+        "9": {
           "Ident": "StiDataBand",
           "Name": "DataBand4",
           "ClientRectangle": "0,11,9.5,0.8",
@@ -699,7 +693,7 @@
           },
           "DataSourceName": "ENSAIO_MUSICAL_REGIONAL"
         },
-        "9": {
+        "10": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand5",
           "Guid": "b225afc84ab380ab21768268a7bc765c",
@@ -734,7 +728,7 @@
             "Value": "REUNIÃO PARA MOCIDADE"
           }
         },
-        "10": {
+        "11": {
           "Ident": "StiDataBand",
           "Name": "DataBand5",
           "ClientRectangle": "0,14,9.5,0.4",
@@ -796,7 +790,7 @@
           },
           "DataSourceName": "REUNIÃO_PARA_MOCIDADE"
         },
-        "11": {
+        "12": {
           "Ident": "StiGroupFooterBand",
           "Name": "GroupFooterBand1",
           "ClientRectangle": "0,15.2,9.5,0.6",
@@ -827,7 +821,7 @@
             }
           }
         },
-        "12": {
+        "13": {
           "Ident": "StiDataBand",
           "Name": "DataBand2",
           "ClientRectangle": "0,16.6,9.5,1.4",
@@ -850,7 +844,52 @@
               },
               "Border": ";;;;;;;solid:Black",
               "Brush": "solid:",
-              "TextBrush": "solid:Black"
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              }
+            }
+          },
+          "DataSourceName": "NOMEDALISTAREPORT"
+        },
+        "14": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand2",
+          "ClientRectangle": "0,18.8,9.5,0.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "15": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand7",
+          "ClientRectangle": "0,20.4,9.5,0.8",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "Guid": "243eea0ed2c6749c49c0f30b041bfca6",
+              "ClientRectangle": "0.05,0.1,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "FIM DO RELATÓRIO"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;true;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
             }
           },
           "DataSourceName": "NOMEDALISTAREPORT"

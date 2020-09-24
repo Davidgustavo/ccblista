@@ -15,7 +15,7 @@
         <class>app.entity.funcao</class>
         <class>app.entity.membros</class>
         <properties>
-            <property name="eclipselink.ddl-generation" value="none"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
         </properties>
     </persistence-unit>
 </persistence>

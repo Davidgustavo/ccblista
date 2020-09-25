@@ -368,8 +368,7 @@
         {
           "entity": "Listaservicos",
           "namespace": "app.entity.Listaservicos",
-          "alias": "l",
-          "name": "Listaservicos"
+          "alias": "l"
         }
       ],
       "rulesSelect": [
@@ -396,7 +395,13 @@
       ],
       "rulesGroupBy": [],
       "rulesHaving": [],
-      "rulesOrderBy": [],
+      "rulesOrderBy": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "order": "asc"
+        }
+      ],
       "rules": {
         "condition": "AND",
         "rules": [
@@ -522,8 +527,7 @@
         {
           "entity": "Listaservicos",
           "namespace": "app.entity.Listaservicos",
-          "alias": "l",
-          "name": "Listaservicos"
+          "alias": "l"
         }
       ],
       "rulesSelect": [
@@ -550,7 +554,13 @@
       ],
       "rulesGroupBy": [],
       "rulesHaving": [],
-      "rulesOrderBy": [],
+      "rulesOrderBy": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "order": "asc"
+        }
+      ],
       "rules": {
         "condition": "AND",
         "rules": [
@@ -676,8 +686,7 @@
         {
           "entity": "Listaservicos",
           "namespace": "app.entity.Listaservicos",
-          "alias": "l",
-          "name": "Listaservicos"
+          "alias": "l"
         }
       ],
       "rulesSelect": [
@@ -709,7 +718,13 @@
       ],
       "rulesGroupBy": [],
       "rulesHaving": [],
-      "rulesOrderBy": [],
+      "rulesOrderBy": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "order": "asc"
+        }
+      ],
       "rules": {
         "condition": "AND",
         "rules": [
@@ -835,8 +850,7 @@
         {
           "entity": "Listaservicos",
           "namespace": "app.entity.Listaservicos",
-          "alias": "l",
-          "name": "Listaservicos"
+          "alias": "l"
         }
       ],
       "rulesSelect": [
@@ -863,7 +877,13 @@
       ],
       "rulesGroupBy": [],
       "rulesHaving": [],
-      "rulesOrderBy": [],
+      "rulesOrderBy": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "order": "asc"
+        }
+      ],
       "rules": {
         "condition": "AND",
         "rules": [
@@ -2286,5 +2306,169 @@
       "foreignKey": null
     },
     "serviceUrl": "api/cronapi/odata/v2/app/query422745/"
+  },
+  "query46500": {
+    "customId": "ENSAIOMUSICALLOCAL",
+    "queryName": "ENSAIOMUSICALLOCAL",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Listaservicos",
+    "entityFullName": "app.entity.Listaservicos",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Listaservicos",
+          "namespace": "app.entity.Listaservicos",
+          "alias": "l"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "l",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "type": "date"
+        },
+        {
+          "func": "get",
+          "field": "l.atende1.membro_nomecurto",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.localevento.comum_nome",
+          "type": "string"
+        },
+        {
+          "func": "get",
+          "field": "l.atende2.membro_nomecurto",
+          "type": "string"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [
+        {
+          "func": "get",
+          "field": "l.dataehora",
+          "order": "asc"
+        }
+      ],
+      "rules": {
+        "condition": "AND",
+        "rules": [
+          {
+            "id": "l.eventos.evento_nome",
+            "field": "l.eventos.evento_nome",
+            "type": "string",
+            "input": "text",
+            "operator": "equal",
+            "value": "ENSAIO MUSICAL LOCAL",
+            "valueIsField": false
+          },
+          {
+            "id": "l.nomeDaLista.id",
+            "field": "l.nomeDaLista.id",
+            "type": "integer",
+            "input": "text",
+            "operator": "equal",
+            "value": ":nomeDaListaId",
+            "valueIsField": false
+          }
+        ],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "nomeDaListaId",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "security": {
+      "id": null,
+      "dataehora": null,
+      "localevento": null,
+      "atende1": null,
+      "atende2": null,
+      "resultadoirmas": null,
+      "resultadoirmaos": null,
+      "resultadototal": null,
+      "eventos": null,
+      "regional": null,
+      "nomeDaLista": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query46500/"
   }
 }

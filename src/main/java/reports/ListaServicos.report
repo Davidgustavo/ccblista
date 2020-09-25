@@ -1,9 +1,9 @@
 {
-  "ReportGuid": "902a7b007976f0c1a9d7768822247a36",
+  "ReportGuid": "8bf44263d73208cc8c22780f29a2e281",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1595897549000-0300)/",
-  "ReportChanged": "/Date(1595897549000-0300)/",
+  "ReportCreated": "/Date(1595843549000-0300)/",
+  "ReportChanged": "/Date(1595843549000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -245,6 +245,57 @@
         },
         "NameInSource": "app",
         "SqlCommand": "NOMEDALISTAREPORT"
+      },
+      "6": {
+        "Ident": "StiODataSource",
+        "Name": "ENSAIOMUSICALLOCAL",
+        "Alias": "ENSAIOMUSICALLOCAL",
+        "Columns": {
+          "0": {
+            "Name": "l_id",
+            "Index": -1,
+            "NameInSource": "l_id",
+            "Alias": "l_id",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "dataehora",
+            "Index": -1,
+            "NameInSource": "dataehora",
+            "Alias": "dataehora",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "atende1_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende1_membro_nomecurto",
+            "Alias": "atende1_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "localevento_comum_nome",
+            "Index": -1,
+            "NameInSource": "localevento_comum_nome",
+            "Alias": "localevento_comum_nome",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "atende2_membro_nomecurto",
+            "Index": -1,
+            "NameInSource": "atende2_membro_nomecurto",
+            "Alias": "atende2_membro_nomecurto",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "l_dataehora",
+            "Index": -1,
+            "NameInSource": "l_dataehora",
+            "Alias": "l_dataehora",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "app",
+        "SqlCommand": "ENSAIOMUSICALLOCAL"
       }
     },
     "Databases": {
@@ -581,9 +632,128 @@
         },
         "8": {
           "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand6",
+          "Guid": "4b047c8a109a2163deeb14298682db9e",
+          "ClientRectangle": "0,9.6,9.5,0.6",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text14",
+              "Guid": "4e9ff6dcc7b8e5e08bc4a82e940bfab9",
+              "ClientRectangle": "0,0,9.4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ENSAIO MUSICAL LOCAL"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";12;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "ENSAIO MUSICAL LOCAL"
+          }
+        },
+        "9": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand8",
+          "Guid": "cd6f0f6b88d770b65ffd7614a6f06792",
+          "ClientRectangle": "0,11,9.5,0.8",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text22",
+              "Guid": "7185e2c17f55a4276243d043a8ec61d7",
+              "ClientRectangle": "0,0,3,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIOMUSICALLOCAL.dataehora}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text27",
+              "Guid": "570890066161b79d33dfd41e346878f8",
+              "ClientRectangle": "2.8,0,3.2,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIOMUSICALLOCAL.localevento_comum_nome}"
+              },
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text28",
+              "Guid": "3d79f9a2b1897418da550e15a8919a9e",
+              "ClientRectangle": "6,0,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIOMUSICALLOCAL.atende1_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": "Top;;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text29",
+              "Guid": "18b0b70db78385aa5e41eeaca5980648",
+              "ClientRectangle": "6,0.4,3.4,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ENSAIOMUSICALLOCAL.atende2_membro_nomecurto}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "ENSAIOMUSICALLOCAL"
+        },
+        "10": {
+          "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand4",
           "Guid": "29bd98f942ecf01ce28df45ec29065bf",
-          "ClientRectangle": "0,9.6,9.5,0.6",
+          "ClientRectangle": "0,12.6,9.5,0.6",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },
@@ -614,10 +784,10 @@
             "Value": "ENSAIO MUSICAL REGIONAL"
           }
         },
-        "9": {
+        "11": {
           "Ident": "StiDataBand",
           "Name": "DataBand4",
-          "ClientRectangle": "0,11,9.5,0.8",
+          "ClientRectangle": "0,14,9.5,0.8",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },
@@ -693,11 +863,11 @@
           },
           "DataSourceName": "ENSAIO_MUSICAL_REGIONAL"
         },
-        "10": {
+        "12": {
           "Ident": "StiGroupHeaderBand",
           "Name": "GroupHeaderBand5",
           "Guid": "b225afc84ab380ab21768268a7bc765c",
-          "ClientRectangle": "0,12.6,9.5,0.6",
+          "ClientRectangle": "0,15.6,9.5,0.6",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },
@@ -728,10 +898,10 @@
             "Value": "REUNIÃO PARA MOCIDADE"
           }
         },
-        "11": {
+        "13": {
           "Ident": "StiDataBand",
           "Name": "DataBand5",
-          "ClientRectangle": "0,14,9.5,0.4",
+          "ClientRectangle": "0,17,9.5,0.4",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },
@@ -790,10 +960,10 @@
           },
           "DataSourceName": "REUNIÃO_PARA_MOCIDADE"
         },
-        "12": {
+        "14": {
           "Ident": "StiGroupFooterBand",
           "Name": "GroupFooterBand1",
-          "ClientRectangle": "0,15.2,9.5,0.6",
+          "ClientRectangle": "0,18.2,9.5,0.6",
           "Interaction": {
             "Ident": "StiInteraction"
           },
@@ -821,10 +991,10 @@
             }
           }
         },
-        "13": {
+        "15": {
           "Ident": "StiDataBand",
           "Name": "DataBand2",
-          "ClientRectangle": "0,16.6,9.5,1.4",
+          "ClientRectangle": "0,19.6,9.5,1.4",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },
@@ -852,20 +1022,20 @@
           },
           "DataSourceName": "NOMEDALISTAREPORT"
         },
-        "14": {
+        "16": {
           "Ident": "StiGroupFooterBand",
           "Name": "GroupFooterBand2",
-          "ClientRectangle": "0,18.8,9.5,0.8",
+          "ClientRectangle": "0,21.8,9.5,0.8",
           "Interaction": {
             "Ident": "StiInteraction"
           },
           "Border": ";;;;;;;solid:Black",
           "Brush": "solid:"
         },
-        "15": {
+        "17": {
           "Ident": "StiDataBand",
           "Name": "DataBand7",
-          "ClientRectangle": "0,20.4,9.5,0.8",
+          "ClientRectangle": "0,23.4,9.5,0.8",
           "Interaction": {
             "Ident": "StiBandInteraction"
           },

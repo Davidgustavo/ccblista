@@ -379,7 +379,7 @@
         },
         {
           "func": "get",
-          "field": "l.atende1.membro_nomecurto",
+          "field": "l.atende1.membro_nomecompleto",
           "type": "string"
         },
         {
@@ -460,7 +460,7 @@
       "afterUpdate": null,
       "afterDelete": null,
       "onNavigate": null,
-      "onGetData": null
+      "onError": null
     },
     "defaultValues": {
       "id": null,
@@ -508,7 +508,8 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query824357/"
+    "serviceUrl": "api/cronapi/odata/v2/app/query824357/",
+    "audit": false
   },
   "query437741": {
     "customId": "SantaCeia",
@@ -543,7 +544,7 @@
         },
         {
           "func": "get",
-          "field": "l.atende1.membro_nomecurto",
+          "field": "l.atende1.membro_nomecompleto",
           "type": "string"
         },
         {
@@ -619,7 +620,7 @@
       "afterUpdate": null,
       "afterDelete": null,
       "onNavigate": null,
-      "onGetData": null
+      "onError": null
     },
     "defaultValues": {
       "id": null,
@@ -667,7 +668,8 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query437741/"
+    "serviceUrl": "api/cronapi/odata/v2/app/query437741/",
+    "audit": false
   },
   "query575072": {
     "customId": "ENSAIOMUSICALREGIONAL",
@@ -702,12 +704,12 @@
         },
         {
           "func": "get",
-          "field": "l.atende1.membro_nomecurto",
+          "field": "l.atende1.membro_nomecompleto",
           "type": "string"
         },
         {
           "func": "get",
-          "field": "l.atende2.membro_nomecurto",
+          "field": "l.atende2.membro_nomecompleto",
           "type": "string"
         },
         {
@@ -783,7 +785,7 @@
       "afterUpdate": null,
       "afterDelete": null,
       "onNavigate": null,
-      "onGetData": null
+      "onError": null
     },
     "defaultValues": {
       "id": null,
@@ -831,7 +833,8 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query575072/"
+    "serviceUrl": "api/cronapi/odata/v2/app/query575072/",
+    "audit": false
   },
   "query590045": {
     "customId": "REUNIAOPARAMOCIDADE",
@@ -866,7 +869,7 @@
         },
         {
           "func": "get",
-          "field": "l.atende1.membro_nomecurto",
+          "field": "l.atende1.membro_nomecompleto",
           "type": "string"
         },
         {
@@ -942,7 +945,7 @@
       "afterUpdate": null,
       "afterDelete": null,
       "onNavigate": null,
-      "onGetData": null
+      "onError": null
     },
     "defaultValues": {
       "id": null,
@@ -990,7 +993,8 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query590045/"
+    "serviceUrl": "api/cronapi/odata/v2/app/query590045/",
+    "audit": false
   },
   "query624850": {
     "customId": "REGIONALNOVO",
@@ -2132,7 +2136,8 @@
         {
           "entity": "NomeDaLista",
           "namespace": "app.entity.NomeDaLista",
-          "alias": "n"
+          "alias": "n",
+          "name": "NomeDaLista"
         }
       ],
       "rulesSelect": [
@@ -2340,7 +2345,7 @@
         },
         {
           "func": "get",
-          "field": "l.atende1.membro_nomecurto",
+          "field": "l.atende1.membro_nomecompleto",
           "type": "string"
         },
         {
@@ -2350,7 +2355,7 @@
         },
         {
           "func": "get",
-          "field": "l.atende2.membro_nomecurto",
+          "field": "l.atende2.membro_nomecompleto",
           "type": "string"
         }
       ],
@@ -2421,7 +2426,7 @@
       "afterUpdate": null,
       "afterDelete": null,
       "onNavigate": null,
-      "onGetData": null
+      "onError": null
     },
     "defaultValues": {
       "id": null,
@@ -2469,6 +2474,7 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query46500/"
+    "serviceUrl": "api/cronapi/odata/v2/app/query46500/",
+    "audit": false
   }
 }
